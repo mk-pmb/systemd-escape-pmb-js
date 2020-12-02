@@ -42,5 +42,5 @@ async function cmpTest(filename) {
     await old;
     return cmpTest(cur);
   }, 1);
-  console.info('+OK cmp test passed.');
+  console.info('+OK cmp.mjs test passed.');
 }());

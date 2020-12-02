@@ -1,5 +1,5 @@
 { "name": "systemd-escape-pmb",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "(Un)Escape strings and paths for use as systemd unit name parts.",
   "keywords": [
     "escape",
@@ -23,7 +23,7 @@
   "private": false, "license": "ISC",
 
   "main": "se.mjs",
-  "scripts": { "test": "bash test/cmp.sh" },
+  "scripts": { "test": "bash test/all.sh" },
   "directories": { "test": "test" },
 
   "dependencies": {
