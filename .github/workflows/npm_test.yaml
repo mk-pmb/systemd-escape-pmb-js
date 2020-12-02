@@ -1,0 +1,37 @@
+%YAML 1.1
+# ^-- ATTN: [2019-12-31] If you use a later version, Github will fail
+#     with a bogus error message "You have an error in your yaml syntax".
+# -*- coding: UTF-8, tab-width: 4 -*-
+---
+
+on:
+    push:
+        branches:
+            -   '*'
+
+jobs:
+    job_npm_test:
+        runs-on: ubuntu-latest
+        strategy:
+            matrix:
+                node-version:
+                    -   "10.x"
+                    -   "12.x"
+
+        steps:
+            -   run: >
+                    sudo ln --symbolic --no-target-directory --verbose
+                    -- "$(which node)" /usr/bin/nodejs
+            -   uses: actions/checkout@v2
+            -   name: Use Node.js ${{ matrix.node-version }}
+                uses: actions/setup-node@v1
+                with:
+                    node-version: ${{ matrix.node-version }}
+            -   run: npm install
+            -   run: npm run build --if-present
+            -   run: npm test
+                env:
+                    CI: true
+
+
+...
