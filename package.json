@@ -1,0 +1,34 @@
+{ "name": "systemd-escape-pmb",
+  "version": "0.0.1",
+  "description": "(Un)Escape strings and paths for use as systemd unit name parts.",
+  "keywords": [
+    "escape",
+    "path",
+    "string",
+    "systemd",
+    "unescape"
+  ],
+
+  "author": "M.K. (https://github.com/mk-pmb)",
+  "homepage": "https://github.com/mk-pmb/systemd-escape-pmb-js/#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mk-pmb/systemd-escape-pmb-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mk-pmb/systemd-escape-pmb-js/issues"
+  },
+  "contributors": [],
+
+  "private": false, "license": "ISC",
+
+  "main": "se.js",
+  "scripts": { "test": "nodejs test.usage.js" },
+  "directories": { "test": "test" },
+
+  "dependencies": {},
+  "devDependencies": {},
+
+
+  "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
+}
