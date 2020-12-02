@@ -1,0 +1,27 @@
+﻿[
+
+{ "plain":  "/dev/sda1",
+  "str":    "-dev-sda1",
+  "path":   "dev-sda1"
+},
+
+{ "plain":  "/dev/disk/by-uuid/c26af46b-d6dd-4614-b2d5-c7f4bf6291b9",
+  "str":    "-dev-disk-by\\x2duuid-c26af46b\\x2dd6dd\\x2d4614\\x2db2d5\\x2dc7f4bf6291b9",
+  "path":   "dev-disk-by\\x2duuid-c26af46b\\x2dd6dd\\x2d4614\\x2db2d5\\x2dc7f4bf6291b9"
+},
+
+{ "plain":  "/dev/disk/by-label/ab.cd-ef_gh=ij",
+  "str":    "-dev-disk-by\\x2dlabel-ab.cd\\x2def_gh\\x3dij",
+  "path":   "dev-disk-by\\x2dlabel-ab.cd\\x2def_gh\\x3dij"
+},
+
+{ "plain":  ".@/foo$bAR§qux/ab.çd-êf_gh=ij",
+  "str":    "\\x2e\\x40-foo\\x24bAR\\xc2\\xa7qux-ab.\\xc3\\xa7d\\x2d\\xc3\\xaaf_gh\\x3dij",
+  "path":   "\\x2e\\x40-foo\\x24bAR\\xc2\\xa7qux-ab.\\xc3\\xa7d\\x2d\\xc3\\xaaf_gh\\x3dij"
+},
+
+
+
+
+
+null]

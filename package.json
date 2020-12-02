@@ -22,12 +22,21 @@
 
   "private": false, "license": "ISC",
 
-  "main": "se.js",
-  "scripts": { "test": "nodejs test.usage.js" },
+  "main": "se.mjs",
+  "scripts": { "test": "bash test/cmp.sh" },
   "directories": { "test": "test" },
 
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "p-fatal": "^0.1.3",
+    "usnam-pmb": "^0.2.4"
+  },
+  "devDependencies": {
+    "absdir": "^1.0.6",
+    "equal-pmb": "^0.1.23",
+    "nodemjs": "^0.1.8",
+    "read-data-file": "^2.0.1",
+    "vtry": "^1.0.6"
+  },
 
 
   "npm vs. BOM = Unexpected token": "-*- coding: UTF-8 -*-"
